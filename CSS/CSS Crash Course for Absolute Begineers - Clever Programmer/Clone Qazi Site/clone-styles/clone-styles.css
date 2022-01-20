@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 1000;
+    max-width: 500px;
+    margin: auto;
+    line-height: 2.3em;
+    padding-top: 20px;
+    /*absolute vs relative path. Relative is like clone-styles/clone-styles.css.
+    Absolute is like Users/Ken/Code/CSS/CSS crashcourse/Clone Qazi Site/.../clone-styles.css */
+    background-image: url("../images/moroccan-flower.png"); /*.. goes back to clone-styles folder since now you are in clone-styles.css, in clone-styles folder you can then reference the image. */
+}
+
+button:hover {
+    background-color: orange
+}
+
+ul {
+    list-style-type: none; /*removes the default bullet points */
+    margin: 0; /* */
+    padding: 0; /*ensure that ul has no padding by default, it is overridding the padding*/
+    overflow: hidden; /*can't even see the nav bar without the overflow hidden*, so must be hidden*/
+    background-color: #333; /*gives the background colour of grey for nav bar */
+  }
+  
+li {
+    float: left;
+  }
+  
+li a {
+    display: block; /* makes it wider from top and bottom*/
+    color: white; /* changes the colour of text to white*/
+    text-align: center;
+    padding: 14px 16px; /* 14px from the top and bottom, 16px from the left and right. Both combine to make text to be in the middle*/
+    text-decoration: none; /* without this, you will have underline*/
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+li a:hover { /*li a:hover means if you hover on a bullet point link, the following happens*/
+    background-color: #111;
+  }
