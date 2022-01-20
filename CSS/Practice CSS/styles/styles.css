@@ -1,0 +1,56 @@
+/* importing Raleway font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+body{
+    font-family: 'Raleway', sans-serif;
+    background-image: url("");
+    max-width: 300px;
+    margin: auto
+
+}
+
+h1 {
+    color: green
+}
+/* h1 and h1 a are selectors */
+h1 a {
+    Color: red  
+}
+
+/* when you hover over a text tagged with h2, it will turn orange */
+h2 a:hover {
+    color: orange
+}
+
+/* creating a class, to turn things into a class put a . in front */
+.chessboard {
+    border-radius: 30px;
+}
+
+.chessboard:hover {
+    /* code is from CSSmatic */
+    -webkit-box-shadow: 0px 0px 38px 25px rgba(0,255,89,1);
+    -moz-box-shadow: 0px 0px 38px 25px rgba(0,255,89,1);
+    box-shadow: 0px 0px 38px 25px rgba(0,255,89,1);
+}
+
+.mate-in-one {
+    box-shadow: 10px 10px teal ;
+}
+
+/* to make the edges of the image rounded */
+/* # is for ids, not classes */
+#mate-in-one {
+    box-shadow: 10px 10px teal ;
+}
+
+/* adding hover functionality (:hover) to the class: mate-in-two */
+.mate-in-two {
+    box-shadow: 5px 5px red;
+    border-radius: 30px;
+}
+
+ul li a{
+    color: green; 
+     text-decoration: none /*Taking out the underline from the link */
+}
